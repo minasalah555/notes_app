@@ -12,9 +12,16 @@ class CustomBottonAdd extends StatelessWidget {
         color: Color(0xff53EBD6),
       ),
       child: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 20),
+        padding: const EdgeInsets.symmetric(vertical: 16),
         child: Center(
-          child: Text('Add', style: TextStyle(color: Colors.black)),
+          child: Text(
+            'Add',
+            style: TextStyle(
+              fontSize: 18,
+              color: Colors.black,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
         ),
       ),
     );
