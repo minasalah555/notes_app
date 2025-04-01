@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:notes_app/views/edit_note.dart';
+import 'package:notes_app/views/edit_note_view.dart';
 
 class CustomItemNotes extends StatelessWidget {
   const CustomItemNotes({super.key, required this.color});
@@ -9,7 +9,7 @@ class CustomItemNotes extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.pushNamed(context, EditNote.id);
+        Navigator.pushNamed(context, EditNoteView.id);
       },
       child: Container(
         padding: EdgeInsets.only(top: 24, bottom: 24, left: 16),
