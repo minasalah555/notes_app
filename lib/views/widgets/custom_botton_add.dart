@@ -8,7 +8,7 @@ class CustomBottonAdd extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        margin: EdgeInsets.only(top: 80),
+        margin: EdgeInsets.only(top: 60),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8),
           color: Color(0xff53EBD6),

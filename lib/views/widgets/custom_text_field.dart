@@ -24,7 +24,9 @@ class CustomTextField extends StatelessWidget {
         hintText: title,
         hintStyle: const TextStyle(color: kPrimayColor),
         enabledBorder: borderRadius(),
+        border: borderRadius(color: kPrimayColor),
         focusedBorder: borderRadius(color: kPrimayColor),
+        errorBorder: borderRadius(color: Colors.red),
       ),
     );
   }
