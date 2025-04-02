@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:notes_app/cubits/add_notes_cubit/add_note_cubit.dart';
+import 'package:notes_app/models/note_model.dart';
 import 'package:notes_app/views/edit_note_view.dart';
 
 class CustomItemNotes extends StatelessWidget {
@@ -9,6 +12,14 @@ class CustomItemNotes extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
+        // BlocProvider.of<AddNoteCubit>(context).addNote(
+        //   NoteModel(
+        //     title: 'mina',
+        //     subTitle: 'mina',
+        //     color: Colors.black.value,
+        //     date: DateTime.now().toString(),
+        //   ),
+        // );
         Navigator.pushNamed(context, EditNoteView.id);
       },
       child: Container(
