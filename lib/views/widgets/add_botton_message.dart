@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:notes_app/cubits/add_notes_cubit/add_note_cubit.dart';
 import 'package:notes_app/cubits/add_notes_cubit/add_note_state.dart';
+import 'package:notes_app/cubits/show_all_notes_cubit/show_all_notes_cubit.dart';
 import 'package:notes_app/views/widgets/addNoteForm.dart';
 
 class CustomShowBottonSheet extends StatelessWidget {
@@ -15,6 +16,7 @@ class CustomShowBottonSheet extends StatelessWidget {
         listener: (context, state) {
           if (state is AddNoteSuccess) {
             Navigator.pop(context);
+            BlocProvider.of<ShowAllNotesCubit>(context).getAllNotes();
           } else if (state is AddNoteFailure) {
             print('error message ${state.errMessage}');
           }

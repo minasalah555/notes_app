@@ -4,6 +4,8 @@ abstract class ShowNoteState {}
 
 class ShowNoteInitional extends ShowNoteState {}
 
+class NotesSuccess extends ShowNoteState {}
+
 // class ShowNoteLoading extends ShowNoteState {}
 
 // class ShowNoteSuccess extends ShowNoteState {
