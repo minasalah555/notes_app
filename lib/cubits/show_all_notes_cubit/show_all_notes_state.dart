@@ -4,16 +4,16 @@ abstract class ShowNoteState {}
 
 class ShowNoteInitional extends ShowNoteState {}
 
-class ShowNoteLoading extends ShowNoteState {}
+// class ShowNoteLoading extends ShowNoteState {}
 
-class ShowNoteSuccess extends ShowNoteState {
-  final List<NoteModel> notes;
+// class ShowNoteSuccess extends ShowNoteState {
+//   final List<NoteModel> notes;
 
-  ShowNoteSuccess({required this.notes});
-}
+//   ShowNoteSuccess({required this.notes});
+// }
 
-class ShowNoteFailure extends ShowNoteState {
-  final String errMessage;
+// class ShowNoteFailure extends ShowNoteState {
+//   final String errMessage;
 
-  ShowNoteFailure({required this.errMessage});
-}
+//   ShowNoteFailure({required this.errMessage});
+// }
