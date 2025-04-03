@@ -20,6 +20,7 @@ class CustomShowBottonSheet extends StatelessWidget {
           }
         },
         builder: (context, state) {
+          print('rebuild ui ');
           return AbsorbPointer(
             absorbing: state is AddNoteLoading ? true : false,
             child: Padding(
@@ -27,13 +28,13 @@ class CustomShowBottonSheet extends StatelessWidget {
                 top: 20,
                 left: 20,
                 right: 20,
-                bottom: 20,
+                bottom: MediaQuery.of(context).viewInsets.bottom,
               ),
               child: SizedBox(
                 height: 350,
                 child: ListView(
                   padding: EdgeInsets.zero,
-                  children: [AddNoteForm()],
+                  children: [const AddNoteForm()],
                 ),
               ),
             ),
