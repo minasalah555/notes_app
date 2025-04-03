@@ -33,7 +33,7 @@ class CustomShowBottonSheet extends StatelessWidget {
                 bottom: MediaQuery.of(context).viewInsets.bottom,
               ),
               child: SizedBox(
-                height: 350,
+                height: 400,
                 child: ListView(
                   padding: EdgeInsets.zero,
                   children: [const AddNoteForm()],
